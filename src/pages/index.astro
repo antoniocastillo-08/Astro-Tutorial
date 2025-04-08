@@ -1,5 +1,8 @@
 ---
+import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
 
+const TitlePage= 'Home Page';
 ---
 
 <html lang="en">
@@ -8,14 +11,12 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>LOL</title>
+		<title>{TitlePage}</title>
 	</head>
 	<body>
-		<a href="/">Home</a>
-		<a href="/about/">About</a>
-		<a href="/blog/">Blog</a>
-		
-		<h1>About Me</h1>
+		<Navigation />
+
+		<h1>{TitlePage}</h1>
 		<h2>... and my new Astro site!</h2>
 		<h1>My Astro Site</h1>
 		<h1>About Me</h1>
