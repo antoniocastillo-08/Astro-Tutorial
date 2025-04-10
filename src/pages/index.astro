@@ -1,6 +1,8 @@
 ---
 import '../styles/global.css';
+import Footer from '../components/Footer.astro';
 import Navigation from '../components/Navigation.astro';
+import Header from '../components/Header.astro';
 
 const TitlePage= 'Home Page';
 ---
@@ -14,7 +16,7 @@ const TitlePage= 'Home Page';
 		<title>{TitlePage}</title>
 	</head>
 	<body>
-		<Navigation />
+		<Header />
 
 		<h1>{TitlePage}</h1>
 		<h2>... and my new Astro site!</h2>
@@ -25,7 +27,7 @@ const TitlePage= 'Home Page';
 		<p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
 	  
 		<p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
-	  </body>
-	  
-	  
+		<Footer />
+
+	</body>
 </html>
